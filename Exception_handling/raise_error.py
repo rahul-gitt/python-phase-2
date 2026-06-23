@@ -3,7 +3,7 @@ try:
     if age <10 or age>18:
         raise ValueError("Age must be between 10 and 18")
     else:
-        print("WWelcome to the club.")
+        print("Welcome to the club.")
 except Exception as err:
     print(f"An error occurs as {err}")
 print("Club will start soon")
