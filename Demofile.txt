@@ -1,0 +1,1 @@
+Hello I'm Rahul and I'm writing inside the demo fileHello I'm Rahul and I'm writing inside the demo fileNow I append new line in the txt file
