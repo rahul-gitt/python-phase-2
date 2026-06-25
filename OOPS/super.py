@@ -20,3 +20,8 @@ class Details(Student):
 obj = Details("Rahul", 20, 543,"J")
 obj.show()
 obj.show2()
+
+'''
+super() is used to call the parent class constructor or method
+It avoids rewrite the parent class code
+'''
