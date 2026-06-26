@@ -12,4 +12,3 @@ class Human(Animal):
 obj = Human()
 
 obj.show()      # it show only i am a human beacuse it override the I am an animal line.
-obj.show()
