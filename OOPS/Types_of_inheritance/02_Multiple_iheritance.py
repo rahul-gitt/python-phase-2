@@ -1,32 +1,21 @@
 # Multiple Inheritance (Many Parents and one chield)
 
-class FactoryKolkata:                   #PARENT CLASS
-    def __init__(self,material):
-        self.material = material
-
+class FactoryKolkata:   #PARENT CLASS
     def show(self):
-        print(f"The material is {self.material}")
+        print("Leather")
 
-class FactoryMumbai:                    #PARENT CLASS
-    def __init__(self,material,zip):
-        super().__init__(material)
-        self.zip = zip
-
+class FactoryMumbai:    #PARENT CLASS
     def show2(self):
-        print(f"Number of zips : {self.zip}")
+        print("3 Zips")
 
-class FactoryBhopal:                    #PARENT CLASS
-    def __init__(self,material,zip,pocket):
-        super().__init__(material,zip)
-        self.pocket = pocket
-
+class FactoryBhopal:    #PARENT CLASS
     def show3(self):
-        print(f"Number of pockets : {self.pocket}")
+        print("2 Pockets")
 
-class Details(FactoryBhopal,FactoryMumbai,FactoryKolkata):           #CHIELD CLASS
+class Details(FactoryBhopal, FactoryMumbai, FactoryKolkata):    #CHIELD CLASS
     pass
 
-obj = Details("leather",3,2)
+obj = Details()
 
 obj.show()
 obj.show2()
