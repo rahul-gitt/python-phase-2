@@ -1,7 +1,7 @@
 # Abstraction
 from abc import ABC, abstractmethod
 class Animal(ABC):
-    @abstractmethod
+    @abstractmethod         # decorator
     def sound(self):
         pass
 
