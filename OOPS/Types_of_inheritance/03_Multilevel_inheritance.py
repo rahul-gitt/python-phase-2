@@ -1,7 +1,7 @@
 # Multilevel inheritance (Grandfather -> Father -> Son)
 
 
-class FactoryKolkata:                   
+class FactoryKolkata:                   #grand father
     def __init__(self, material):
         self.material = material
 
@@ -9,7 +9,7 @@ class FactoryKolkata:
         print(f"The material is {self.material}")
 
 
-class FactoryMumbai(FactoryKolkata):                    
+class FactoryMumbai(FactoryKolkata):                #grand mother    
     def __init__(self, material, zip):
         super().__init__(material)
         self.zip = zip
@@ -18,7 +18,7 @@ class FactoryMumbai(FactoryKolkata):
         print(f"Number of zips : {self.zip}")
 
 
-class FactoryBhopal(FactoryMumbai):                    
+class FactoryBhopal(FactoryMumbai):           # father         
     def __init__(self, material, zip, pocket):
         super().__init__(material, zip)
         self.pocket = pocket
@@ -27,7 +27,7 @@ class FactoryBhopal(FactoryMumbai):
         print(f"Number of pockets : {self.pocket}")
 
 
-class Details(FactoryBhopal):  
+class Details(FactoryBhopal):     # son
     pass
 
 
