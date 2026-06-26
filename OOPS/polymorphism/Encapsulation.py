@@ -14,4 +14,5 @@ obj = Student()
 
 print(obj.name)
 print(obj._age)
-#print(obj.__selary)
+#print(obj.__selary)  # it shows an error we can't access it directly
+
